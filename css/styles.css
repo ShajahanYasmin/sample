@@ -63,6 +63,7 @@ p {
 label {
   display: inline-block;
   margin-right: 5rem;
+  margin-block: 2rem;
 }
 .input {
   padding: 1.5rem 2rem;
@@ -70,12 +71,7 @@ label {
   font-size: 1.5rem;
   border: 1px solid #ccc;
 }
-.input-group {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
+
 .input:focus {
   outline: 1px solid #cbff96;
 }

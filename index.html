@@ -25,102 +25,89 @@
         <tbody>
           <tr class="grid">
             <td>
-              <div class="form">
-                <form action="" method="post">
-                  <div class="input-group">
-                    <label for="name">Name </label>
-                    <input
-                      type="text"
-                      class="input"
-                      id="name"
-                      required
-                      name="Name"
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="email">Email </label>
-                    <input
-                      type="text"
-                      class="input"
-                      id="email"
-                      required
-                      name="Email"
-                      pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="website">Website </label>
-                    <input
-                      type="text"
-                      class="input"
-                      id="website"
-                      name="website"
-                      required
-                      size="20"
-                      pattern="^https*://*/.*$"
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="imgLink">Image link </label>
-                    <input
-                      type="text"
-                      class="input"
-                      id="imgLink"
-                      name="img-link"
-                      required
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="gender">Gender</label>
-                    <div class="flex-block">
-                      <div>
-                        <input
-                          type="radio"
-                          class="radio"
-                          name="gender"
-                          value="male"
-                        /><span>Male</span>
-                      </div>
+              <form action="" method="post">
+                <label for="name">Name </label>
+                <input
+                  type="text"
+                  class="input"
+                  id="name"
+                  required
+                  name="Name"
+                />
+                <br />
 
-                      <div>
-                        <input
-                          type="radio"
-                          class="radio"
-                          name="gender"
-                          value="female"
-                          checked
-                        /><span>Female</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="input-group">
-                    <label for="skills">Skills</label>
-                    <div>
-                      <label>
-                        <input
-                          type="checkbox"
-                          value="Java"
-                          id="skills1"
-                          checked
-                        />
-                        Java</label
-                      >
-                      <label>
-                        <input type="checkbox" value="HTML" id="skills2" />
-                        HTML</label
-                      >
-                      <label>
-                        <input type="checkbox" value="CSS" id="skills3" />
-                        CSS</label
-                      >
-                    </div>
-                  </div>
+                <label for="email">Email </label>
+                <input
+                  type="text"
+                  class="input"
+                  id="email"
+                  required
+                  name="Email"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                />
+
+                <br />
+                <label for="website">Website </label>
+                <input
+                  type="text"
+                  class="input"
+                  id="website"
+                  name="website"
+                  required
+                  size="20"
+                  pattern="^https*://*/.*$"
+                />
+
+                <br />
+                <label for="imgLink">Image link </label>
+                <input
+                  type="text"
+                  class="input"
+                  id="imgLink"
+                  name="img-link"
+                  required
+                />
+                <br />
+
+                <label for="gender">Gender</label>
+
+                <input
+                  type="radio"
+                  class="radio"
+                  name="gender"
+                  value="male"
+                /><span>Male</span>
+
+                <input
+                  type="radio"
+                  class="radio"
+                  name="gender"
+                  value="female"
+                  checked
+                /><span>Female</span>
+                <br />
+
+                <label for="skills">Skills</label>
+
+                <label>
+                  <input type="checkbox" value="Java" id="skills1" checked />
+                  Java</label
+                >
+                <label>
+                  <input type="checkbox" value="HTML" id="skills2" />
+                  HTML</label
+                >
+                <label>
+                  <input type="checkbox" value="CSS" id="skills3" />
+                  CSS</label
+                >
+                <div>
                   <button class="btn btn--secondary" type="submit">
                     Enroll Student</button
                   >&nbsp;
                   <button class="btn btn--primary" type="reset">Clear</button>
-                </form>
-              </div>
+                </div>
+              </form>
             </td>
             <td>
               <div class="description">
