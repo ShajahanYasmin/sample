@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2"><h3>Student Enrollment Form</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grid">
+            <td>
+              <div class="form">
+                <form action="" method="post">
+                  <div class="input-group">
+                    <label for="name">Name </label>
+                    <input
+                      type="text"
+                      class="input"
+                      id="name"
+                      required
+                      name="Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email </label>
+                    <input
+                      type="text"
+                      class="input"
+                      id="email"
+                      required
+                      name="Email"
+                      pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="website">Website </label>
+                    <input
+                      type="text"
+                      class="input"
+                      id="website"
+                      name="website"
+                      required
+                      size="20"
+                      pattern="^https*://*/.*$"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="imgLink">Image link </label>
+                    <input
+                      type="text"
+                      class="input"
+                      id="imgLink"
+                      name="img-link"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <div class="flex-block">
+                      <div>
+                        <input
+                          type="radio"
+                          class="radio"
+                          name="gender"
+                          value="male"
+                        /><span>Male</span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          class="radio"
+                          name="gender"
+                          value="female"
+                          checked
+                        /><span>Female</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label for="skills">Skills</label>
+                    <div>
+                      <label>
+                        <input
+                          type="checkbox"
+                          value="Java"
+                          id="skills1"
+                          checked
+                        />
+                        Java</label
+                      >
+                      <label>
+                        <input type="checkbox" value="HTML" id="skills2" />
+                        HTML</label
+                      >
+                      <label>
+                        <input type="checkbox" value="CSS" id="skills3" />
+                        CSS</label
+                      >
+                    </div>
+                  </div>
+                  <button class="btn btn--secondary" type="submit">
+                    Enroll Student</button
+                  >&nbsp;
+                  <button class="btn btn--primary" type="reset">Clear</button>
+                </form>
+              </div>
+            </td>
+            <td>
+              <div class="description">
+                <table border="1" id="table1">
+                  <caption>
+                    Enrolled Students
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Description</th>
+                      <th>Image</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="desc">
+                        <ul class="list">
+                          <li class="list__item"><b>John Doe</b></li>
+                          <li class="list__item">Male</li>
+                          <li class="list__item">johndoe@gmail.com</li>
+                          <li class="list__item">
+                            <a href="https://johndoe.com" target="_blank"
+                              >www.johndoe.com</a
+                            >
+                          </li>
+                          <li class="list__item">HTML,CSS</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <img src="/images/face.png" alt="" class="img" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
